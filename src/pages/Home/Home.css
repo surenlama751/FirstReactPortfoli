@@ -1,0 +1,238 @@
+html{
+  background-color:#F3F3F3;
+ 
+}
+.main{
+  margin:0;
+  margin-top:-17px;
+  background-color:#F3F3F3;
+  width:auto;
+  height:auto;
+  position:fixed;
+}
+.image{
+  display:flex;
+  position: absolute;
+  
+  justify-content: center;
+  margin-top:100px;
+  margin-left:1000px;
+
+}
+
+#main-image {
+  height:400px;
+  width:300px;
+  display:flex;
+  position:absolute;
+  border-radius: 100px;
+  animation: slidinProject1 0.5s ease-in 0s;
+
+  
+  box-shadow: 5px -5px 10px #F3F3F3;
+
+
+  
+}
+.first-greeting{
+  display:flex;
+  position:absolute;
+  margin-top:170px;
+  margin-left:260px;
+  font-size:18px;
+  font-weight: bold;
+  color:grey;
+  animation: slidinProject1 0.5s ease-in 0s;
+}
+
+.name{
+  display:flex;
+  position:absolute;
+  margin-top:180px;
+  margin-left:220px;
+ 
+  
+}
+
+#name-info{
+  font-weight: bold;
+  font-size:35px;
+  display:flex;
+  
+  word-spacing: 5px;
+}
+
+.info{
+  width:48%;
+  color:grey;
+  display:flex;
+  position: fixed;
+  margin-top:265px;
+  margin-left:220px;
+  font-size:13px;
+
+}
+
+.button{
+  display:flex;
+  position: absolute;
+  margin-top:400px;
+  margin-left:220px;
+  animation: slidinProject1 0.5s ease-in 0s;
+  
+  animation: jump 0.5s infinite 0s;
+}
+#projects{
+width: 100px;
+height:30px;
+background:grey;
+color:#EEBB52;
+font-weight: bold;
+letter-spacing: 1px;
+border-radius: 7px;
+font-size:10px;
+animation: opacity 1s infinite 0s;
+}
+
+.socio{
+  display: flex;
+  position:absolute;
+  word-spacing: 5px;
+  margin-top:450px;
+  margin-left:300px;
+  animation: slideinLeft 0.5s ease-in 0s;
+
+}
+.facebook{
+  color:rgb(63, 63, 180);
+  margin-left:-80px;
+  font-size: 25px;
+  position:absolute;
+
+}
+.instagram{
+  color:#ed8217;
+  margin-left:-40px;
+  font-size: 25px;
+  position: absolute;
+
+}
+.linkedin{
+  color:#3c71ed;
+  margin-left:0px;
+  font-size: 25px;
+  position: absolute;
+}
+.twitter{
+  position:absolute;
+  font-size: 25px;
+  color:skyblue;
+  margin-left:40px;
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+ #greeting{
+  position:absolute;
+  display:flex;
+  margin-left:-170px;
+  margin-top:50px;
+ }
+ #information{
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:-170px;
+  margin-top:50px;
+  width:150%;
+
+ }
+ #name-info{
+  position: absolute;
+  margin-left:-170px;
+  margin-top:60px;
+  
+ }
+ .button{
+  position:absolute;
+  display:flex;
+  margin-left:65px;
+  margin-top:560px;
+  border-radius: 0;
+  
+ }
+ .image{
+  z-index:-5;
+  position: absolute;
+  margin-left:200px;
+  margin-top:500px;
+  
+
+ }
+#projects{
+  width:200px;
+  height:40px;
+  position:absolute;
+
+
+}
+.facebook{
+  position:absolute;
+  margin-top:170px;
+  margin-left:-220px;
+  color:rgb(63, 63, 180);
+}
+.instagram{
+  position:absolute;
+  margin-top:170px;
+  margin-left:-175px;
+  color:#ed8217;
+}
+.linkedin{
+  position:absolute;
+  margin-top:170px;
+  margin-left:-130px;
+  color:#3c71ed;
+}
+.twitter{
+  position:absolute;
+  margin-top:170px;
+  margin-left:-85px;
+}
+}
+
+@keyframes slidinProject1{
+  from{
+    transform:translateY(-30px);
+  }
+  to{
+    transform:translateY(0);
+  }
+}
+
+@keyframes slideinLeft{
+  from{
+    transform: translateX(-30px);
+  }
+  to{
+    transform:translateX(x);
+  }
+}
+
+@keyframes opacity{
+  from{
+    opacity:0.3;
+  } 
+  to {
+    opacity:1;
+  }
+}
+@keyframes jump{
+  from{
+    transform:translateY(-5%);
+  }
+  to {
+    transform:translateY(0);
+  }
+}

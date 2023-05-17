@@ -1,0 +1,82 @@
+#main-image1{
+  margin-top:150px;
+  height:350px;
+  width:250px;
+  margin-left:200px;
+  position:fixed;
+  border-right:1px solid black;
+  border-radius: 10px;
+  animation: slidinProject2 0.5s ease-in 0s;
+  
+}
+.role-name1{
+  margin-top:100px;
+  margin-left:480px;
+  font-size: 50px;
+  font-weight: bold;
+  position:fixed;
+  color:grey;
+}
+
+#info1{
+  position: fixed;
+  margin-top:220px;
+  font-weight: bold;
+  
+  margin-left:480px;
+  max-width:550px;
+  color:grey;
+}
+
+#role-info1{
+  position:fixed;
+  margin-top:290px;
+  margin-left:480px;
+  max-width:550px;
+  color:grey;
+}
+
+#btn{
+  position: fixed;
+  margin-top:380px;
+  margin-left:480px;
+  width:70px;
+  height:60px;
+  border-radius:40px ;
+  background-color: rgb(52, 96, 177);
+  color:white;
+  animation: slidinProject2 0.5s ease-in 0s;
+  animation: jump 0.5s infinite 0s;
+}
+
+@keyframes slidinProject2{
+  from{
+    transform:translateY(-30px);
+  }
+  to{
+    transform:translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #main-image1{
+    margin-left:70px;
+    margin-top:320px;
+    height:200px;
+  }
+  .role-name1{
+    margin-top:132px;
+    margin-left:50px;
+  }
+  #info1{
+    margin-left:50px;
+    margin-top:580px;
+  }
+  #btn{
+    margin-left:170px;
+    margin-top:680px;
+  }
+
+
+}
